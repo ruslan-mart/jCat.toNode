@@ -104,7 +104,7 @@ document.body.insertBefore(foo, document.body.firstChild);
 
 Использование с [jCat.createElement](../jCat.createElement)
 ```js
-import {createElement} from "jcat-element";
+import {createElement} from "jcat-create-element";
 
 class Foo {
 	
@@ -112,7 +112,7 @@ class Foo {
 		this.element = createElement(".foo", {
 			textContent: "Hello World!"
 		}, {
-			color: color,
+			color,
 			textAlign: "center"
 		});
 	}
