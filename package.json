@@ -1,0 +1,36 @@
+{
+  "name": "jcat-to-node",
+  "version": "0.0.1",
+  "description": "Thanks to jCat.toNode now you can use your own objects as a parameter for a manipulation methods with DOM (`appendChild`, `insertBefore`, etc.).",
+  "main": "index.js",
+  "directories": {},
+  "dependencies": {},
+  "scripts": {
+    "build": "jcat-builder",
+    "bulid:min": "jcat-builder --compress"
+  },
+  "devDependencies": {
+    "jcat-builder": "^0.1.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ruslan-mart/jCat.toNode.git"
+  },
+  "keywords": [
+    "jcat",
+    "js",
+    "javascript",
+    "toNode",
+    "toElement",
+    "DOM"
+  ],
+  "author": "Ruslan Mart",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ruslan-mart/jCat.toNode/issues"
+  },
+  "homepage": "https://github.com/ruslan-mart/jCat.toNode#readme",
+  "builderOptions": {
+    "bundle": "./dist/jCat.toNode.js"
+  }
+}

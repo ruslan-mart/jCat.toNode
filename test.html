@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<script src="dist/jCat.toNode.js"></script>
+</head>
+<body>
+
+	<script>
+		(function () {
+
+			function Foo() {
+				this.element = document.createElement('div');
+				this.element.textContent = 'Hello World!'
+			}
+
+			Foo.prototype.toNode = function () {
+				return this.element;
+			};
+
+
+			var foo = new Foo();
+			document.body.appendChild(foo);
+
+
+
+			var obj = {
+				element: document.createTextNode('Some text...'),
+				toNode: function () {
+					return this.element;
+				}
+			};
+
+			document.body.replaceChild(obj, foo);
+
+		})();
+	</script>
+
+</body>
+</html>
